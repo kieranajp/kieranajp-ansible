@@ -36,3 +36,8 @@ This is only tested on Mac OS X right now, but I'm pretty sure it'll work on Lin
     - Create `/etc/resolver/vg.conf` containing `nameserver 127.0.0.1`
     - You should now be able to `dig anything.vg` and get a valid response back.
 - If you want to be able to `vagrant up` without running sudo, then run `sudo ./vagrant-sudoers.sh` to add `vagrant` to sudoers.
+
+
+This setup now allows you to create the aforementioned folder structure inside the provided `www` folder and just visit its URL in your browser. Zero config required, you should never have to touch a terminal window.
+
+If you do have an aversion to the terminal entirely, then I recommend [Vagrant Manager](http://vagrantmanager.com/), which will allow you to boot your VM from a GUI. After the initial setup you should never have to touch a terminal window again!
