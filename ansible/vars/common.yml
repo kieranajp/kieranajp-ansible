@@ -1,0 +1,7 @@
+---
+    php_ppa: php5-5.6
+    doc_root: /vagrant/www
+    sys_packages: ["vim","git"]
+    timezone: Europe/London
+    dist: trusty
+    php_packages: ["php5-mysql","php5-xdebug"]
