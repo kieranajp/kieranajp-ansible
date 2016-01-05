@@ -41,3 +41,15 @@ This is only tested on Mac OS X right now, but I'm pretty sure it'll work on Lin
 This setup now allows you to create the aforementioned folder structure inside the provided `www` folder and just visit its URL in your browser. Zero config required, you should never have to touch a terminal window.
 
 If you do have an aversion to the terminal entirely, then I recommend [Vagrant Manager](http://vagrantmanager.com/), which will allow you to boot your VM from a GUI. After the initial setup you should never have to touch a terminal window again!
+
+## Troubleshooting
+
+> Something something threadsafe when I try and run the vagrant box for the first time!
+
+SSH into the vagrant box and replace the `mpm_event` symlinks with symlinks to `mpm_prefork` instead
+
+> I need node.js and npm installed
+
+`curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
+`sudo apt-get install nodejs`
+
