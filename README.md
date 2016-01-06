@@ -56,5 +56,7 @@ The best way is to use [NVM](https://github.com/creationix/nvm)
 
 On the host, edit `/usr/local/etc/dnsmasq.conf` and add `address=/dev/192.168.33.99`, then create `/etc/resolver/dev.conf` containing `nameserver 127.0.0.1`
 
-On the virtual machine, edit `/etc/apache2/sites-enabled/000-default.conf` and replace all instances of `vg` with `dev` (there should be two).
+On the virtual machine, edit `/etc/apache2/sites-enabled/000-default.conf` and replace all instances of `vg` with `dev` (there should be two). Then restart Apache (with `sudo apachectl restart`).
+
+To change this in the Ansible scripts before you provision the VM, edit `roles/apache/templates/vhost24.conf.tpl` in this repo (note that this canonical version of the repo will remain using `.vg`)
 
