@@ -50,6 +50,11 @@ SSH into the vagrant box and replace the `mpm_event` symlinks with symlinks to `
 
 > I need node.js and npm installed
 
-`curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -`
-`sudo apt-get install nodejs`
+The best way is to use [NVM](https://github.com/creationix/nvm)
+
+> I need to change the TLD that's used (from .vg to something else - for example .dev)
+
+On the host, edit `/usr/local/etc/dnsmasq.conf` and add `address=/dev/192.168.33.99`, then create `/etc/resolver/dev.conf` containing `nameserver 127.0.0.1`
+
+On the virtual machine, edit `/etc/apache2/sites-enabled/000-default.conf` and replace all instances of `vg` with `dev` (there should be two).
 
