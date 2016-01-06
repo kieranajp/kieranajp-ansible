@@ -60,3 +60,6 @@ On the virtual machine, edit `/etc/apache2/sites-enabled/000-default.conf` and r
 
 To change this in the Ansible scripts before you provision the VM, edit `roles/apache/templates/vhost24.conf.tpl` in this repo (note that this canonical version of the repo will remain using `.vg`)
 
+> I don't have CURL!
+
+`sudo apt-get install php5-curl`
