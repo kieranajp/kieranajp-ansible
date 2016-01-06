@@ -63,3 +63,7 @@ To change this in the Ansible scripts before you provision the VM, edit `roles/a
 > I don't have CURL / mcrypt!
 
 `sudo apt-get install php5-curl php5-mcrypt`
+
+> "Killed"
+
+The Vagrant box ran out of RAM! Increase its RAM value in the `VagrantFile`, run `vagrant reload` and try again.
