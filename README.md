@@ -46,7 +46,7 @@ If you do have an aversion to the terminal entirely, then I recommend [Vagrant M
 
 > Something something threadsafe when I try and run the vagrant box for the first time!
 
-SSH into the vagrant box and replace the `mpm_event` symlinks with symlinks to `mpm_prefork` instead
+SSH into the vagrant box and replace the `mpm_event` symlinks with symlinks to `mpm_prefork` instead - or just `a2dismod mpm_event && a2enmod mpm_prefork` (as root)
 
 > I need node.js and npm installed
 
